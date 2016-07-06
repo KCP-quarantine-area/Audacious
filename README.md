@@ -1,4 +1,4 @@
-# audacious
+# Audacious
 
 
 Installation:
