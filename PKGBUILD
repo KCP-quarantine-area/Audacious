@@ -1,6 +1,6 @@
-_commit=abcd04c88d6a4b899ee576b274e208736f61e116
+_commit=6c9caba7bbaf9076eb0cf38ae14730b5c2d1f7fc
 pkgname=audacious
-pkgver=3.7.2
+pkgver=3.8.1
 pkgrel=1
 pkgdesc="Lightweight, advanced audio player with qt5 interface"
 arch=('x86_64')
