@@ -9,7 +9,9 @@ license=('BSD')
 depends=('qt5-base' 'libguess' 'libsm' 'unzip'
          'hicolor-icon-theme' 'desktop-file-utils')
 makedepends=('python2') # for gdbus-codegen
-optdepends=('audacious-plugins: many helpful plugins')
+optdepends=('audacious-plugins-jack: many helpful plugins including jack')
+            #OR
+            'audacious-plugins-jack2: many helpful plugins including jack')
 source=(https://github.com/audacious-media-player/audacious/archive/${_commit}.zip)
 md5sums=('2d959d99a971f793a1dbbc6176ec39ed')
 
