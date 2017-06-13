@@ -1,6 +1,6 @@
-_commit=6c9caba7bbaf9076eb0cf38ae14730b5c2d1f7fc
+_commit=7886b7be794e52bc2efe509f450c0881919946b2
 pkgname=audacious
-pkgver=3.8.1
+pkgver=3.8.2
 pkgrel=1
 pkgdesc="Lightweight, advanced audio player with qt5 interface"
 arch=('x86_64')
@@ -11,7 +11,7 @@ depends=('qt5-base' 'libguess' 'libsm' 'unzip'
 makedepends=('python2') # for gdbus-codegen
 optdepends=('audacious-plugins: many helpful plugins')
 source=(https://github.com/audacious-media-player/audacious/archive/${_commit}.zip)
-md5sums=('5eb1ce23a1ed4f36641c9ff764382f67')
+md5sums=('2d959d99a971f793a1dbbc6176ec39ed')
 
 build() {
   cd "$srcdir/$pkgname-$_commit"
@@ -32,4 +32,4 @@ package() {
   cd "$srcdir/$pkgname-$_commit"
   make DESTDIR="$pkgdir" install
   install -Dm644 COPYING "$pkgdir/usr/share/licenses/qt5/LICENSE"
-}
+} 
