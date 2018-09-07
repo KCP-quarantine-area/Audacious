@@ -1,16 +1,16 @@
-_commit=7e86bd7d03300bfd5284b266cde4d4fa1d59a33d
+_commit=ddfd82a8867a039460f923cd225b982935335ceb
 pkgname=audacious
-pkgver=3.9
+pkgver=3.10
 pkgrel=1
 pkgdesc="Lightweight, advanced audio player with qt5 interface"
 arch=('x86_64')
-url="http://audacious-media-player.org/"
+url="https://audacious-media-player.org/"
 license=('BSD')
 depends=('qt5-base' 'libguess' 'libsm' 'unzip' 'hicolor-icon-theme' 'desktop-file-utils')
 optdepends=('audacious-plugins')
 makedepends=('python2')
 source=(https://github.com/audacious-media-player/audacious/archive/${_commit}.zip)
-md5sums=('dede04ec97f35d6f182d9d7c907dd118')
+md5sums=('479ef2a13e722abbd06d94c3a42b3c0a')
 
 build() {
   cd "$srcdir/$pkgname-$_commit"
